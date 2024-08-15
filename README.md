@@ -8,9 +8,10 @@ In this repository, you will find a collection of projects and assignments that 
 
 ## List of Projects
 
-- [0x00. MySQL advanced](https://github.com/Ebube-Ochemba/alx-backend-storage/blob/main/0x00-MySQL_Advanced)
-- [0x01. NoSQL](https://github.com/Ebube-Ochemba/alx-backend-storage/blob/main/0x01-NoSQL)
-- [0x02. Redis basic](https://github.com/Ebube-Ochemba/alx-backend-storage/blob/main/0x02-redis_basic)
+- [0x00. Pascal's Triangle](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x00-pascal_triangle)
+- [0x01. Lockboxes](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x01-lockboxes)
+- [0x02. Minimum Operations](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x02-minimum_operations)
+- [0x03. Log Parsing](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x03-log_parsing)
 
 ## Environment
 
