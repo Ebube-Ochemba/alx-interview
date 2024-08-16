@@ -12,16 +12,16 @@ def canUnlockAll(boxes):
     if (type(boxes) is not list or len(boxes) == 0):
         return False
 
-    for box_number in range(1, len(boxes) - 1):
-        is_unlocked = False
-        for current_box in range(len(boxes)):
-            is_unlocked = (
-                box_number in boxes[current_box] and
-                box_number != current_box
+    for target_box in range(1, len(boxes) - 1):
+        can_be_unlocked = False
+        for box_with_key in range(len(boxes)):
+            can_be_unlocked = (
+                target_box in boxes[box_with_key] and
+                target_box != box_with_key
             )
-            if is_unlocked:
+            if can_be_unlocked:
                 break
-        if is_unlocked is False:
-            return is_unlocked
+        if can_be_unlocked is False:
+            return can_be_unlocked
 
     return True
