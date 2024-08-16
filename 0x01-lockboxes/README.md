@@ -20,4 +20,4 @@ I revisited Python concepts like: Lists and List Comprehensions, Graph Theory Ba
     - The first box `boxes[0]` is unlocked
     - Return `True` if all boxes can be opened, else return `False`
 
-> [0-main.py](./0-main.py): A test case for the program. Provided by Alx.
+> [main_0.py](./main_0.py): A test case for the program. Provided by Alx.
