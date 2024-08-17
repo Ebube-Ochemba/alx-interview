@@ -25,7 +25,7 @@ def calcPrimeFactors(number):
 
 
 def minOperations(n):
-    """Calculates the fewest number of operations need
+    """Calculates the fewest number of operations needed
     to result in exactly n H characters in the file"""
     if n <= 1:
         return 0
