@@ -9,24 +9,33 @@ const movieId = process.argv[2];
 // Construct the API URL using the movie ID
 const apiUrl = `https://swapi-api.alx-tools.com/api/films/${movieId}/`;
 
-if (process.argv.length > 2) {
-  request(`${apiUrl}/films/${process.argv[2]}/`, (err, _, body) => {
-    if (err) {
-      console.log(err);
-    }
-    const charactersURL = JSON.parse(body).characters;
-    const charactersName = charactersURL.map(
-      url => new Promise((resolve, reject) => {
-        request(url, (promiseErr, __, charactersReqBody) => {
-          if (promiseErr) {
-            reject(promiseErr);
-          }
-          resolve(JSON.parse(charactersReqBody).name);
-        });
-      }));
+// Use the get method of the request module to send a GET request to the API URL
+request.get(apiUrl, (error, response, body) => {
+  if (error) {
+    console.error(error);
+    return;
+  }
+  if (response.statusCode !== 200) {
+    console.error(`Error: ${response.statusCode}`);
+    return;
+  }
 
-    Promise.all(charactersName)
-      .then(names => console.log(names.join('\n')))
-      .catch(allErr => console.log(allErr));
+  const film = JSON.parse(body);
+  const characters = film.characters;
+
+  characters.forEach(characterUrl => {
+    request.get(characterUrl, (error, response, body) => {
+      if (error) {
+        console.error(error);
+        return;
+      }
+      if (response.statusCode !== 200) {
+        console.error(`Error: ${response.statusCode}`);
+        return;
+      }
+
+      const character = JSON.parse(body);
+      console.log(character.name);
+    });
   });
-}
+});
