@@ -12,6 +12,10 @@ In this repository, you will find a collection of projects and assignments that 
 - [0x01. Lockboxes](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x01-lockboxes)
 - [0x02. Minimum Operations](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x02-minimum_operations)
 - [0x03. Log Parsing](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x03-log_parsing)
+- [](https://github.com/Ebube-Ochemba/alx-interview/blob/main/)
+- [](https://github.com/Ebube-Ochemba/alx-interview/blob/main/)
+- [0x06. Star Wars API](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x06-starwars_api)
+- [](https://github.com/Ebube-Ochemba/alx-interview/blob/main/)
 
 ## Environment
 
