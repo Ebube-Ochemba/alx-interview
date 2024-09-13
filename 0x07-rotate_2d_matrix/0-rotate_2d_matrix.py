@@ -1,17 +1,13 @@
 #!/usr/bin/python3
-"""Module for 2D Matrix rotation.
+"""0-rotate_2d_matrix.py
 """
 
 
 def rotate_2d_matrix(matrix):
-    """
-    Rotates a 2D matrix 90 degrees clockwise in-place.
-
-    Parameters:
-        matrix (list[list[int]]): the 2D matrix to be rotated.
-
-    Returns:
-        None
+    """Rotates a 2D matrix 90 degrees clockwise in-place.
+    Args:
+        matrix (list[list]): 2D int matrix
+    Returns: None
     """
     # Reverse the order of the rows
     matrix.reverse()
