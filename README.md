@@ -15,7 +15,7 @@ In this repository, you will find a collection of projects and assignments that 
 - [](https://github.com/Ebube-Ochemba/alx-interview/blob/main/)
 - [](https://github.com/Ebube-Ochemba/alx-interview/blob/main/)
 - [0x06. Star Wars API](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x06-starwars_api)
-- [0x07. Rotate 2D Matrix](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0-rotate_2d_matrix.py)
+- [0x07. Rotate 2D Matrix](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x07-rotate_2d_matrix)
 - [](https://github.com/Ebube-Ochemba/alx-interview/blob/main/)
 
 ## Environment
