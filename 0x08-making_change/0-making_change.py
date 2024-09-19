@@ -3,33 +3,49 @@
 
 
 def makeChange(coins, total):
+    """
+    Determines the fewest number of coins needed to meet a given total amount.
+
+    args:
+        coins : A list of coin denominations (integers greater than 0).
+        total : The total amount to achieve using the given coins.
+
+    Returns:
+        The fewest number of coins required to meet the total.
+            -1, if the total cannot be met
+            0, if total <= 0.
+    """
+
     if total <= 0:
         return 0
 
-    # array for coin "change" calculation
-    dp = [float('inf')] * (total + 1)
-    dp[0] = 0  # 0 coin needed to total 0
+    coins.sort(reverse=True)
 
-    for amount in range(1, total + 1):
-        for coin in coins:
-            if coin <= amount:
-                dp[amount] = min(dp[amount], dp[amount - coin] + 1)
+    count = 0
 
-    return dp[total] if dp[total] != float('inf') else -1
+    for coin in coins:
+        count += total // coin
+        total = total % coin
+        if total == 0:
+            return count
+
+    return -1
 
 
 """
-Guide
------
-I. Lines 10 - 11
-    - Initialize dp array with a large number, (total+1 is larger than any
-    possible result). i.e. set all indexes to an infinite value
-    - Set Base case: 0 coins needed to make 0 total
+Illustration by Lines
+------------
+19-20: If the total is 0 or less, no coins are needed
 
-II. Lines 13 - 16
-    - Iterate over every amount from 1 to total
-    - Check each coin to see if it can contribute to the current amount
+22: Sort the coins in descending order, to sort from largest to smallest
 
-III. Line 18
-    - If dp[total] is still inf, it means no solution was found
+24: Track total number of coins used
+
+26: Iterate through each coin denomination
+    27: Use as many of the current coin as possible
+    28: Update the total to the remainder after using the current coin
+    29-30: If total is now 0, we've found exact amount, return count
+
+32: If total isn't 0 after iterating through the coins, return -1
+    This means it's impossible to meet the total with the given coins
 """
