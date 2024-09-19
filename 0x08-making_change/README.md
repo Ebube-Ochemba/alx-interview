@@ -10,7 +10,7 @@ I revisited concepts like: Greedy Algorithms, Dynamic Programming, Algorithmic C
 
 > Each file contains the solution to a task in the project.
 
-- [] [0-making_change.py](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x08-making_change/0-making_change.py): Given a pile of coins of different values, determine the fewest number of coins needed to meet a given amount `total`.
+- [x] [0-making_change.py](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x08-making_change/0-making_change.py): Given a pile of coins of different values, determine the fewest number of coins needed to meet a given amount `total`.
 - Prototype: `def makeChange(coins, total)`
   - Return: fewest number of coins needed to meet `total`
     - If `total` is `0` or less, return `0`
