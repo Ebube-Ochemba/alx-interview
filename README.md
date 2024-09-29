@@ -17,7 +17,7 @@ In this repository, you will find a collection of projects and assignments that 
 - [0x06. Star Wars API](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x06-starwars_api)
 - [0x07. Rotate 2D Matrix](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x07-rotate_2d_matrix)
 - [0x08. Making Change](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x08-making_change)
-- [](https://github.com/Ebube-Ochemba/alx-interview/blob/main/)
+- [0x09. Island Perimeter](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x09-island_perimeter)
 - [](https://github.com/Ebube-Ochemba/alx-interview/blob/main/)
 
 ## Environment
