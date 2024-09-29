@@ -10,7 +10,7 @@ I revisited Python concepts like: 2D arrays, conditional loops, counting techniq
 
 > Each file contains the solution to a task in the project.
 
-- [ ] [0-island_perimeter.py](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x09-island_perimeter/0-island_perimeter.py): Create a function `def island_perimeter(grid):` that returns the perimeter of the island described in `grid`:
+- [x] [0-island_perimeter.py](https://github.com/Ebube-Ochemba/alx-interview/blob/main/0x09-island_perimeter/0-island_perimeter.py): Create a function `def island_perimeter(grid):` that returns the perimeter of the island described in `grid`:
   - `grid` is a list of list of integers:
     - 0 represents water
     - 1 represents land
